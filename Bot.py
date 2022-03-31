@@ -28,7 +28,7 @@ def Get(message):
     msg = message.text
     first = message.chat.first_name
 
-            if msg.startswith('/pip'):
+    if msg.startswith('/pip'):
                 try:
 
                     data = str(msg).split(' ')
@@ -54,7 +54,7 @@ def Get(message):
                     bot.send_message(message.chat.id,
                                      text=f"sorry! you leave something empty!\nOr you are missing some requires\nPlease see the photo in /start ")
 
-            elif msg.startswith('/run'):
+    elif msg.startswith('/run'):
                 try:
 
                     data = str(msg).split(' ')
@@ -67,7 +67,7 @@ def Get(message):
                     bot.send_message(message.chat.id,
                                      text=f"sorry! you leave something empty!\nOr you are missing some requires\nPlease see the photo in /start ")
 
-            elif msg.startswith('/help'):
+    elif msg.startswith('/help'):
                 try:
 
                     key = types.InlineKeyboardMarkup()
@@ -79,7 +79,7 @@ def Get(message):
                 except:
                     bot.send_message(message.chat.id,text=f"sorry! you leave something empty!\nOr you are missing some requires\nPlease see the photo in /start ")
 
-            else:
+    else:
                 bot.send_message(message.chat.id, text=f"Sorry!, I cant understand what the hell you want!, {msg}")
 
 
