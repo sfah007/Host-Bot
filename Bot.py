@@ -15,7 +15,7 @@ def send_welcome(message):
 
         data = requests.get('https://apis.red/botdata/data.txt').text
 
-        if str(message.chat.id) == 1643689827 :
+        if str(message.chat.id) == "1643689827" :
 
             key = types.InlineKeyboardMarkup()
             b1 = types.InlineKeyboardButton(text='Channel', url='https://t.me/CodeLeak')
@@ -46,7 +46,7 @@ def Get(message):
     try:
         data = requests.get('https://apis.red/botdata/data.txt').text
 
-        if str(message.chat.id) == 1643689827 :
+        if str(message.chat.id) == "1643689827" :
             if msg.startswith('/pip'):
                 try:
 
